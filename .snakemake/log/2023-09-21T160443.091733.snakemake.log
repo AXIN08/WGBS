@@ -1,0 +1,11 @@
+Building DAG of jobs...
+InputFunctionException in rule soapnuke in file /home/liuxin/data_pasteur/12_epigenome/WGBS/snakefile.py, line 31:
+Error:
+  TypeError: Passing a set as an indexer is not supported. Use a list instead.
+Wildcards:
+  sample=sample1
+Traceback:
+  File "/home/liuxin/data_pasteur/12_epigenome/WGBS/snakefile.py", line 33, in <lambda>
+  File "/home/liuxin/data_pasteur/12_epigenome/WGBS/snakefile.py", line 15, in get_reads
+  File "/home/liuxin/mambaforge/envs/snakemake/lib/python3.9/site-packages/pandas/core/indexing.py", line 1091, in __getitem__
+  File "/home/liuxin/mambaforge/envs/snakemake/lib/python3.9/site-packages/pandas/core/indexing.py", line 2618, in check_dict_or_set_indexers

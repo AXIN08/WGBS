@@ -1,0 +1,4 @@
+NameError in file /home/liuxin/data_pasteur/12_epigenome/WGBS/snakefile.py, line 12:
+name 'FALSE' is not defined
+  File "/home/liuxin/data_pasteur/12_epigenome/WGBS/snakefile.py", line 17, in <module>
+  File "/home/liuxin/data_pasteur/12_epigenome/WGBS/snakefile.py", line 12, in parse_samples

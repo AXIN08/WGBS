@@ -1,0 +1,5 @@
+AttributeError in file /home/liuxin/data_pasteur/12_epigenome/WGBS/snakefile.py, line 12:
+'DataFrame' object has no attribute 'set'
+  File "/home/liuxin/data_pasteur/12_epigenome/WGBS/snakefile.py", line 17, in <module>
+  File "/home/liuxin/data_pasteur/12_epigenome/WGBS/snakefile.py", line 12, in parse_samples
+  File "/home/liuxin/mambaforge/envs/snakemake/lib/python3.9/site-packages/pandas/core/generic.py", line 5989, in __getattr__

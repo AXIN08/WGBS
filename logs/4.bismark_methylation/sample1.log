@@ -1,0 +1,127 @@
+
+ *** Bismark methylation extractor version v0.24.1 ***
+
+Output directory /home/liuxin/data_pasteur/12_epigenome/WGBS/4.bismark_methylation/sample1/ doesn't exist, creating it for you...
+
+Output will be written into the directory: /home/liuxin/data_pasteur/12_epigenome/WGBS/4.bismark_methylation/sample1/
+Setting option '--no_overlap' since this is (normally) the right thing to do for paired-end data
+
+Summarising Bismark methylation extractor parameters:
+===============================================================
+Bismark paired-end SAM format specified (default)
+Number of cores to be used: 8
+Strand-specific outputs will be skipped. Separate output files for cytosines in CpG, CHG and CHH context will be generated
+Output path specified as: /home/liuxin/data_pasteur/12_epigenome/WGBS/4.bismark_methylation/sample1/
+
+Checking file >>/home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1/sample1_1_trimmed_bismark_bt2_pe.deduplicated.bam<< for signs of file truncation...
+
+...passed!
+Writing result file containing methylation information for C in CpG context to /home/liuxin/data_pasteur/12_epigenome/WGBS/4.bismark_methylation/sample1/CpG_context_sample1_1_trimmed_bismark_bt2_pe.deduplicated.txt.gz
+Writing result file containing methylation information for C in CHG context to /home/liuxin/data_pasteur/12_epigenome/WGBS/4.bismark_methylation/sample1/CHG_context_sample1_1_trimmed_bismark_bt2_pe.deduplicated.txt.gz
+Writing result file containing methylation information for C in CHH context to /home/liuxin/data_pasteur/12_epigenome/WGBS/4.bismark_methylation/sample1/CHH_context_sample1_1_trimmed_bismark_bt2_pe.deduplicated.txt.gz
+
+Now reading in Bismark result file /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1/sample1_1_trimmed_bismark_bt2_pe.deduplicated.bam
+
+
+Now reading in Bismark result file /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1/sample1_1_trimmed_bismark_bt2_pe.deduplicated.bam
+
+
+Now reading in Bismark result file /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1/sample1_1_trimmed_bismark_bt2_pe.deduplicated.bam
+
+
+Now reading in Bismark result file /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1/sample1_1_trimmed_bismark_bt2_pe.deduplicated.bam
+
+
+Now reading in Bismark result file /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1/sample1_1_trimmed_bismark_bt2_pe.deduplicated.bam
+
+Now reading in Bismark result file /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1/sample1_1_trimmed_bismark_bt2_pe.deduplicated.bam
+
+Now reading in Bismark result file /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1/sample1_1_trimmed_bismark_bt2_pe.deduplicated.bam
+
+
+Now reading in Bismark result file /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1/sample1_1_trimmed_bismark_bt2_pe.deduplicated.bam
+
+skipping SAM header line:	@HD	VN:1.0	SO:unsorted
+skipping SAM header line:	@SQ	SN:chr1	LN:248387328
+skipping SAM header line:	@SQ	SN:chr2	LN:242696752
+skipping SAM header line:	@SQ	SN:chr3	LN:201105948
+skipping SAM header line:	@SQ	SN:chr4	LN:193574945
+skipping SAM header line:	@SQ	SN:chr5	LN:182045439
+skipping SAM header line:	@SQ	SN:chr6	LN:172126628
+skipping SAM header line:	@SQ	SN:chr7	LN:160567428
+skipping SAM header line:	@SQ	SN:chr8	LN:146259331
+skipping SAM header line:	@SQ	SN:chr9	LN:150617247
+skipping SAM header line:	@SQ	SN:chr10	LN:134758134
+skipping SAM header line:	@SQ	SN:chr11	LN:135127769
+skipping SAM header line:	@SQ	SN:chr12	LN:133324548
+skipping SAM header line:	@SQ	SN:chr13	LN:113566686
+skipping SAM header line:	@SQ	SN:chr14	LN:101161492
+skipping SAM header line:	@SQ	SN:chr15	LN:99753195
+skipping SAM header line:	@SQ	SN:chr16	LN:96330374
+skipping SAM header line:	@SQ	SN:chr17	LN:84276897
+skipping SAM header line:	@SQ	SN:chr18	LN:80542538
+skipping SAM header line:	@SQ	SN:chr19	LN:61707364
+skipping SAM header line:	@SQ	SN:chr20	LN:66210255
+skipping SAM header line:	@SQ	SN:chr21	LN:45090682
+skipping SAM header line:	@SQ	SN:chr22	LN:51324926
+skipping SAM header line:	@SQ	SN:chrX	LN:154259566
+skipping SAM header line:	@SQ	SN:chrY	LN:62460029
+skipping SAM header line:	@SQ	SN:chrM	LN:16569
+skipping SAM header line:	@PG	ID:Bismark	VN:v0.24.1	CL:"bismark --bowtie2 --parallel 6 --genome /home/liuxin/data_pasteur/12_epigenome/CHM13_ref -o /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample1 -1 /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz -2 /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz"
+skipping SAM header line:	@PG	ID:samtools	PN:samtools	PP:Bismark	VN:1.17	CL:/home/liuxin/mambaforge/envs/snakemake/bin/samtools view -bSh -
+skipping SAM header line:	@PG	ID:samtools.1	PN:samtools	PP:samtools	VN:1.17	CL:/home/liuxin/mambaforge/envs/snakemake/bin/samtools view -h /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample1/sample1_1_trimmed.fq.gz.temp.1_bismark_bt2_pe.bam
+skipping SAM header line:	@PG	ID:samtools.2	PN:samtools	PP:samtools.1	VN:1.17	CL:/home/liuxin/mambaforge/envs/snakemake/bin/samtools view -bSh -
+skipping SAM header line:	@PG	ID:samtools.3	PN:samtools	PP:samtools.2	VN:1.17	CL:/home/liuxin/mambaforge/envs/snakemake/bin/samtools view -h --threads 1 /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample1/sample1_1_trimmed_bismark_bt2_pe.bam
+skipping SAM header line:	@PG	ID:samtools.4	PN:samtools	PP:samtools.3	VN:1.17	CL:/home/liuxin/mambaforge/envs/snakemake/bin/samtools view -bS --threads 1 -
+skipping SAM header line:	@PG	ID:samtools.5	PN:samtools	PP:samtools.4	VN:1.17	CL:/home/liuxin/mambaforge/envs/snakemake/bin/samtools view -h /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1/sample1_1_trimmed_bismark_bt2_pe.deduplicated.bam
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Now waiting for all child processes to complete
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+
+Merging individual splitting reports into overall report: '/home/liuxin/data_pasteur/12_epigenome/WGBS/4.bismark_methylation/sample1/sample1_1_trimmed_bismark_bt2_pe.deduplicated_splitting_report.txt'
+Merging from these individual files:
+
+Processed 1330 lines in total
+Total number of methylation call strings processed: 2660
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	57070
+
+Total methylated C's in CpG context:	2718
+Total methylated C's in CHG context:	68
+Total methylated C's in CHH context:	214
+
+Total C to T conversions in CpG context:	528
+Total C to T conversions in CHG context:	13078
+Total C to T conversions in CHH context:	40464
+
+C methylated in CpG context:	83.7%
+C methylated in CHG context:	0.5%
+C methylated in CHH context:	0.5%
+
+
+
+Merging individual M-bias reports into overall M-bias statistics from these 8 individual files:
+Determining maximum read lengths for M-Bias plots
+Maximum read length of Read 1: 150
+Maximum read length of Read 2: 150
+
+Perl module GD::Graph::lines is not installed, skipping drawing M-bias plots (only writing out M-bias plot table)
+Determining maximum read lengths for M-Bias plots
+Maximum read length of Read 1: 150
+Maximum read length of Read 2: 150
+
+Perl module GD::Graph::lines is not installed, skipping drawing M-bias plots (only writing out M-bias plot table)
+Deleting unused files ...
+
+/home/liuxin/data_pasteur/12_epigenome/WGBS/4.bismark_methylation/sample1/CpG_context_sample1_1_trimmed_bismark_bt2_pe.deduplicated.txt.gz contains data ->	kept
+/home/liuxin/data_pasteur/12_epigenome/WGBS/4.bismark_methylation/sample1/CHG_context_sample1_1_trimmed_bismark_bt2_pe.deduplicated.txt.gz contains data ->	kept
+/home/liuxin/data_pasteur/12_epigenome/WGBS/4.bismark_methylation/sample1/CHH_context_sample1_1_trimmed_bismark_bt2_pe.deduplicated.txt.gz contains data ->	kept
+
+

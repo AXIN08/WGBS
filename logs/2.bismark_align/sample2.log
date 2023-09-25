@@ -1,0 +1,506 @@
+Bowtie 2 seems to be working fine (tested command 'bowtie2 --version' [2.5.1])
+Output format is BAM (default)
+Alignments will be written out in BAM format. Samtools found here: '/home/liuxin/mambaforge/envs/snakemake/bin/samtools'
+Reference genome folder provided is /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/	(absolute path is '/home/liuxin/data_pasteur/12_epigenome/CHM13_ref/)'
+FastQ format assumed (by default)
+
+Input files to be analysed (in current folder '/home/liuxin/data_pasteur/12_epigenome/WGBS'):
+/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz
+/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz
+Library is assumed to be strand-specific (directional), alignments to strands complementary to the original top or bottom strands will be ignored (i.e. not performed!)
+Output will be written into the directory: /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample2/
+Summary of all aligner options:	-q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+Running Bismark Parallel version. Number of parallel instances to be spawned: 6
+
+Current working directory is: /home/liuxin/data_pasteur/12_epigenome/WGBS
+
+Now reading in and storing sequence information of the genome specified in: /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/
+
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz and /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz and /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz and /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz and /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz for PID: 0 and offset 1 (sequences written out: 0)
+
+Using the subset file >sample2_1_trimmed.fq.gz.temp.1< as new in-file 1 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz<)
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz for PID: 0 and offset 2 (sequences written out: 0)
+
+Using the subset file >sample2_1_trimmed.fq.gz.temp.2< as new in-file 1 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz<)
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz and /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz and /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz for PID: 0 and offset 3 (sequences written out: 0)
+
+Using the subset file >sample2_1_trimmed.fq.gz.temp.3< as new in-file 1 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz<)
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz for PID: 0 and offset 4 (sequences written out: 0)
+
+Using the subset file >sample2_1_trimmed.fq.gz.temp.4< as new in-file 1 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz<)
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz for PID: 0 and offset 1 (sequences written out: 0)
+
+Using the subset file >sample2_2_trimmed.fq.gz.temp.1< as new in-file 2 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file sample2_1_trimmed.fq.gz.temp.1 to sample2_1_trimmed.fq.gz.temp.1_C_to_T.fastq
+
+Created C -> T converted version of the FastQ file sample2_1_trimmed.fq.gz.temp.1 (0 sequences in total)
+
+Writing a G -> A converted version of the input file sample2_2_trimmed.fq.gz.temp.1 to sample2_2_trimmed.fq.gz.temp.1_G_to_A.fastq
+
+Created G -> A converted version of the FastQ file sample2_2_trimmed.fq.gz.temp.1 (0 sequences in total)
+
+Input files are sample2_1_trimmed.fq.gz.temp.1_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.1_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from sample2_1_trimmed.fq.gz.temp.1_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.1_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz for PID: 3281157 and offset 6 (sequences written out: 0)
+
+Using the subset file >sample2_1_trimmed.fq.gz.temp.6< as new in-file 1 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz<)
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz for PID: 0 and offset 5 (sequences written out: 0)
+
+Using the subset file >sample2_1_trimmed.fq.gz.temp.5< as new in-file 1 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz<)
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz for PID: 0 and offset 2 (sequences written out: 0)
+
+Using the subset file >sample2_2_trimmed.fq.gz.temp.2< as new in-file 2 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file sample2_1_trimmed.fq.gz.temp.2 to sample2_1_trimmed.fq.gz.temp.2_C_to_T.fastq
+
+Created C -> T converted version of the FastQ file sample2_1_trimmed.fq.gz.temp.2 (0 sequences in total)
+
+Writing a G -> A converted version of the input file sample2_2_trimmed.fq.gz.temp.2 to sample2_2_trimmed.fq.gz.temp.2_G_to_A.fastq
+
+Created G -> A converted version of the FastQ file sample2_2_trimmed.fq.gz.temp.2 (0 sequences in total)
+
+Input files are sample2_1_trimmed.fq.gz.temp.2_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.2_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from sample2_1_trimmed.fq.gz.temp.2_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.2_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz for PID: 0 and offset 3 (sequences written out: 0)
+
+Using the subset file >sample2_2_trimmed.fq.gz.temp.3< as new in-file 2 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file sample2_1_trimmed.fq.gz.temp.3 to sample2_1_trimmed.fq.gz.temp.3_C_to_T.fastq
+
+Created C -> T converted version of the FastQ file sample2_1_trimmed.fq.gz.temp.3 (0 sequences in total)
+
+Writing a G -> A converted version of the input file sample2_2_trimmed.fq.gz.temp.3 to sample2_2_trimmed.fq.gz.temp.3_G_to_A.fastq
+
+Created G -> A converted version of the FastQ file sample2_2_trimmed.fq.gz.temp.3 (0 sequences in total)
+
+Input files are sample2_1_trimmed.fq.gz.temp.3_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.3_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from sample2_1_trimmed.fq.gz.temp.3_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.3_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz for PID: 0 and offset 4 (sequences written out: 0)
+
+Using the subset file >sample2_2_trimmed.fq.gz.temp.4< as new in-file 2 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file sample2_1_trimmed.fq.gz.temp.4 to sample2_1_trimmed.fq.gz.temp.4_C_to_T.fastq
+
+Created C -> T converted version of the FastQ file sample2_1_trimmed.fq.gz.temp.4 (0 sequences in total)
+
+Writing a G -> A converted version of the input file sample2_2_trimmed.fq.gz.temp.4 to sample2_2_trimmed.fq.gz.temp.4_G_to_A.fastq
+
+Created G -> A converted version of the FastQ file sample2_2_trimmed.fq.gz.temp.4 (0 sequences in total)
+
+Input files are sample2_1_trimmed.fq.gz.temp.4_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.4_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from sample2_1_trimmed.fq.gz.temp.4_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.4_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz for PID: 3281157 and offset 6 (sequences written out: 0)
+
+Using the subset file >sample2_2_trimmed.fq.gz.temp.6< as new in-file 2 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file sample2_1_trimmed.fq.gz.temp.6 to sample2_1_trimmed.fq.gz.temp.6_C_to_T.fastq
+
+Created C -> T converted version of the FastQ file sample2_1_trimmed.fq.gz.temp.6 (0 sequences in total)
+
+Writing a G -> A converted version of the input file sample2_2_trimmed.fq.gz.temp.6 to sample2_2_trimmed.fq.gz.temp.6_G_to_A.fastq
+
+Created G -> A converted version of the FastQ file sample2_2_trimmed.fq.gz.temp.6 (0 sequences in total)
+
+Input files are sample2_1_trimmed.fq.gz.temp.6_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.6_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from sample2_1_trimmed.fq.gz.temp.6_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.6_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz for PID: 0 and offset 5 (sequences written out: 0)
+
+Using the subset file >sample2_2_trimmed.fq.gz.temp.5< as new in-file 2 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file sample2_1_trimmed.fq.gz.temp.5 to sample2_1_trimmed.fq.gz.temp.5_C_to_T.fastq
+
+Created C -> T converted version of the FastQ file sample2_1_trimmed.fq.gz.temp.5 (0 sequences in total)
+
+Writing a G -> A converted version of the input file sample2_2_trimmed.fq.gz.temp.5 to sample2_2_trimmed.fq.gz.temp.5_G_to_A.fastq
+
+Created G -> A converted version of the FastQ file sample2_2_trimmed.fq.gz.temp.5 (0 sequences in total)
+
+Input files are sample2_1_trimmed.fq.gz.temp.5_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.5_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from sample2_1_trimmed.fq.gz.temp.5_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.5_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+0 reads
+0.00% overall alignment rate
+Found no alignment, assigning undef to last_seq_id and last_lines
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from sample2_1_trimmed.fq.gz.temp.1_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.1_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+0 reads
+0.00% overall alignment rate
+0 reads
+0.00% overall alignment rate
+Found no alignment, assigning undef to last_seq_id and last_lines
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from sample2_1_trimmed.fq.gz.temp.4_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.4_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+0 reads
+0.00% overall alignment rate
+0 reads
+0.00% overall alignment rate
+Found no alignment, assigning undef to last_seq_id and last_lines
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from sample2_1_trimmed.fq.gz.temp.2_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.2_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found no alignment, assigning undef to last_seq_id and last_lines
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from sample2_1_trimmed.fq.gz.temp.5_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.5_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found no alignment, assigning undef to last_seq_id and last_lines
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from sample2_1_trimmed.fq.gz.temp.3_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.3_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+0 reads
+0.00% overall alignment rate
+Found no alignment, assigning undef to last_seq_id and last_lines
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from sample2_1_trimmed.fq.gz.temp.6_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.6_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+Unable to read file magic number
+is_zstd_file: unable to read magic number
+0 reads
+0.00% overall alignment rate
+0 reads
+0.00% overall alignment rate
+Found no alignment, assigning undef to last_seq_id and last_lines
+Found no alignment, assigning undef to last_seq_id and last_lines
+0 reads
+0.00% overall alignment rate
+0 reads
+0.00% overall alignment rate
+0 reads
+0.00% overall alignment rate
+Found no alignment, assigning undef to last_seq_id and last_lines
+Found no alignment, assigning undef to last_seq_id and last_lines
+Found no alignment, assigning undef to last_seq_id and last_lines
+0 reads
+0.00% overall alignment rate
+Found no alignment, assigning undef to last_seq_id and last_lines
+
+>>> Writing bisulfite mapping results to sample2_1_trimmed.fq.gz.temp.5_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to sample2_1_trimmed.fq.gz.temp.3_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to sample2_1_trimmed.fq.gz.temp.4_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to sample2_1_trimmed.fq.gz.temp.2_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to sample2_1_trimmed.fq.gz.temp.6_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to sample2_1_trimmed.fq.gz.temp.1_bismark_bt2_pe.bam <<<
+
+
+Reading in the sequence files sample2_1_trimmed.fq.gz.temp.5 and sample2_2_trimmed.fq.gz.temp.5
+Processed 0 sequences in total
+
+
+Reading in the sequence files sample2_1_trimmed.fq.gz.temp.3 and sample2_2_trimmed.fq.gz.temp.3
+Processed 0 sequences in total
+
+
+Successfully deleted the temporary files sample2_1_trimmed.fq.gz.temp.5_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.5_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	0
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	0
+
+Total methylated C's in CpG context:	0
+Total methylated C's in CHG context:	0
+Total methylated C's in CHH context:	0
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	0
+Total unmethylated C's in CHG context:	0
+Total unmethylated C's in CHH context:	0
+Total unmethylated C's in Unknown context:	0
+
+Can't determine percentage of methylated Cs in CpG context if value was 0
+Can't determine percentage of methylated Cs in CHG context if value was 0
+Can't determine percentage of methylated Cs in CHH context if value was 0
+Can't determine percentage of methylated Cs in Unknown context (CN or CHN) if value was 0
+
+
+
+Successfully deleted the temporary files sample2_1_trimmed.fq.gz.temp.3_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.3_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	0
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	0
+
+Total methylated C's in CpG context:	0
+Total methylated C's in CHG context:	0
+Total methylated C's in CHH context:	0
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	0
+Total unmethylated C's in CHG context:	0
+Total unmethylated C's in CHH context:	0
+Total unmethylated C's in Unknown context:	0
+
+Can't determine percentage of methylated Cs in CpG context if value was 0
+Can't determine percentage of methylated Cs in CHG context if value was 0
+Can't determine percentage of methylated Cs in CHH context if value was 0
+Can't determine percentage of methylated Cs in Unknown context (CN or CHN) if value was 0
+
+
+
+Reading in the sequence files sample2_1_trimmed.fq.gz.temp.4 and sample2_2_trimmed.fq.gz.temp.4
+
+Reading in the sequence files sample2_1_trimmed.fq.gz.temp.2 and sample2_2_trimmed.fq.gz.temp.2
+Processed 0 sequences in total
+
+Processed 0 sequences in total
+
+
+Reading in the sequence files sample2_1_trimmed.fq.gz.temp.6 and sample2_2_trimmed.fq.gz.temp.6
+Processed 0 sequences in total
+
+
+Successfully deleted the temporary files sample2_1_trimmed.fq.gz.temp.4_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.4_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	0
+
+Successfully deleted the temporary files sample2_1_trimmed.fq.gz.temp.2_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.2_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	0
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	0
+
+Total methylated C's in CpG context:	0
+Total methylated C's in CHG context:	0
+Total methylated C's in CHH context:	0
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	0
+Total unmethylated C's in CHG context:	0
+Total unmethylated C's in CHH context:	0
+Total unmethylated C's in Unknown context:	0
+
+Can't determine percentage of methylated Cs in CpG context if value was 0
+Can't determine percentage of methylated Cs in CHG context if value was 0
+Can't determine percentage of methylated Cs in CHH context if value was 0
+Can't determine percentage of methylated Cs in Unknown context (CN or CHN) if value was 0
+
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	0
+
+Total methylated C's in CpG context:	0
+Total methylated C's in CHG context:	0
+Total methylated C's in CHH context:	0
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	0
+Total unmethylated C's in CHG context:	0
+Total unmethylated C's in CHH context:	0
+Total unmethylated C's in Unknown context:	0
+
+Can't determine percentage of methylated Cs in CpG context if value was 0
+Can't determine percentage of methylated Cs in CHG context if value was 0
+Can't determine percentage of methylated Cs in CHH context if value was 0
+Can't determine percentage of methylated Cs in Unknown context (CN or CHN) if value was 0
+
+
+
+Successfully deleted the temporary files sample2_1_trimmed.fq.gz.temp.6_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.6_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	0
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	0
+
+Total methylated C's in CpG context:	0
+Total methylated C's in CHG context:	0
+Total methylated C's in CHH context:	0
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	0
+Total unmethylated C's in CHG context:	0
+Total unmethylated C's in CHH context:	0
+Total unmethylated C's in Unknown context:	0
+
+Can't determine percentage of methylated Cs in CpG context if value was 0
+Can't determine percentage of methylated Cs in CHG context if value was 0
+Can't determine percentage of methylated Cs in CHH context if value was 0
+Can't determine percentage of methylated Cs in Unknown context (CN or CHN) if value was 0
+
+
+Now waiting for all child processes to complete
+
+Reading in the sequence files sample2_1_trimmed.fq.gz.temp.1 and sample2_2_trimmed.fq.gz.temp.1
+Processed 0 sequences in total
+
+
+Successfully deleted the temporary files sample2_1_trimmed.fq.gz.temp.1_C_to_T.fastq and sample2_2_trimmed.fq.gz.temp.1_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	0
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	0
+
+Total methylated C's in CpG context:	0
+Total methylated C's in CHG context:	0
+Total methylated C's in CHH context:	0
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	0
+Total unmethylated C's in CHG context:	0
+Total unmethylated C's in CHH context:	0
+Total unmethylated C's in Unknown context:	0
+
+Can't determine percentage of methylated Cs in CpG context if value was 0
+Can't determine percentage of methylated Cs in CHG context if value was 0
+Can't determine percentage of methylated Cs in CHH context if value was 0
+Can't determine percentage of methylated Cs in Unknown context (CN or CHN) if value was 0
+
+
+
+
+Right, cleaning up now...
+
+Deleting temporary sequence files...
+Now merging BAM files sample2_1_trimmed.fq.gz.temp.1_bismark_bt2_pe.bam sample2_1_trimmed.fq.gz.temp.2_bismark_bt2_pe.bam sample2_1_trimmed.fq.gz.temp.3_bismark_bt2_pe.bam sample2_1_trimmed.fq.gz.temp.4_bismark_bt2_pe.bam sample2_1_trimmed.fq.gz.temp.5_bismark_bt2_pe.bam sample2_1_trimmed.fq.gz.temp.6_bismark_bt2_pe.bam into >>> sample2_1_trimmed_bismark_bt2_pe.bam <<<
+Merging from file >> sample2_1_trimmed.fq.gz.temp.1_bismark_bt2_pe.bam <<
+Merging from file >> sample2_1_trimmed.fq.gz.temp.2_bismark_bt2_pe.bam <<
+Merging from file >> sample2_1_trimmed.fq.gz.temp.3_bismark_bt2_pe.bam <<
+Merging from file >> sample2_1_trimmed.fq.gz.temp.4_bismark_bt2_pe.bam <<
+Merging from file >> sample2_1_trimmed.fq.gz.temp.5_bismark_bt2_pe.bam <<
+Merging from file >> sample2_1_trimmed.fq.gz.temp.6_bismark_bt2_pe.bam <<
+
+Deleting temporary BAM files...
+Writing report to /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample2/sample2_1_trimmed_bismark_bt2_PE_report.txt
+Now merging temporary reports sample2_1_trimmed.fq.gz.temp.1_bismark_bt2_PE_report.txt sample2_1_trimmed.fq.gz.temp.2_bismark_bt2_PE_report.txt sample2_1_trimmed.fq.gz.temp.3_bismark_bt2_PE_report.txt sample2_1_trimmed.fq.gz.temp.4_bismark_bt2_PE_report.txt sample2_1_trimmed.fq.gz.temp.5_bismark_bt2_PE_report.txt sample2_1_trimmed.fq.gz.temp.6_bismark_bt2_PE_report.txt into >>> /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample2/sample2_1_trimmed_bismark_bt2_PE_report.txt <<<
+Merging from file >> sample2_1_trimmed.fq.gz.temp.1_bismark_bt2_PE_report.txt <<
+Merging from file >> sample2_1_trimmed.fq.gz.temp.2_bismark_bt2_PE_report.txt <<
+Merging from file >> sample2_1_trimmed.fq.gz.temp.3_bismark_bt2_PE_report.txt <<
+Merging from file >> sample2_1_trimmed.fq.gz.temp.4_bismark_bt2_PE_report.txt <<
+Merging from file >> sample2_1_trimmed.fq.gz.temp.5_bismark_bt2_PE_report.txt <<
+Merging from file >> sample2_1_trimmed.fq.gz.temp.6_bismark_bt2_PE_report.txt <<
+
+Printing a final merged alignment report for all individual sub-reports
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	0
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	0
+
+Total methylated C's in CpG context:	0
+Total methylated C's in CHG context:	0
+Total methylated C's in CHH context:	0
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	0
+Total unmethylated C's in CHG context:	0
+Total unmethylated C's in CHH context:	0
+Total unmethylated C's in Unknown context:	0
+
+Can't determine percentage of methylated Cs in CpG context if value was 0
+Can't determine percentage of methylated Cs in CHG context if value was 0
+Can't determine percentage of methylated Cs in CHH context if value was 0
+Can't determine percentage of methylated Cs in Unknown context (CN or CHN) if value was 0
+
+
+Deleting temporary report files...
+Bismark completed in 0d 0h 0m 46s
+
+====================
+Bismark run complete
+====================
+
