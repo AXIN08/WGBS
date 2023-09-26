@@ -54,11 +54,11 @@ def args_to_dict(args: argparse.ArgumentParser) -> Dict[str, Any]:
             #"config": os.path.abspath(args.config_output),
             "outdir": os.path.abspath(args.outdir),
             "threads": {
-                "soapnuke": 8,
+                "soapnuke": 12,
                 "bis_align": 6,
                 "bis_dedul": 8,
                 "bis_call": 8},
-            "ref": args.ref_dir,
+            "ref": os.path.abspath(args.ref_dir),
             "sample":os.path.abspath(args.samplefile)
             }
     logging.debug(result_dict)

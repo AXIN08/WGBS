@@ -43,6 +43,7 @@ rule soapnuke:
         "benchmarks/1.trimmed/{sample}.benchmark.txt"
     log:
         "logs/1.trimmed/{sample}.log"
+
     params:
         out_dir=directory(f"{OUTPUT_DIR}/1.trimmed/{{sample}}"),
         clean1=f"{{sample}}_1_trimmed.fq.gz",

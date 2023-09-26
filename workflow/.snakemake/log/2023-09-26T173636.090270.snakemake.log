@@ -1,0 +1,111 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count    min threads    max threads
+-----------------  -------  -------------  -------------
+all                      1              1              1
+bismark_alignment        2              6              6
+bismark_duplicate        2              8              8
+bismark_extract          2              8              8
+soapnuke                 2              8              8
+total                    9              1              8
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver in time (10s). Falling back to greedy solver.
+
+[Tue Sep 26 17:36:49 2023]
+rule soapnuke:
+    input: /home/liuxin/data_pasteur/12_epigenome/test_dir/sample2/sample2_1.fq.gz, /home/liuxin/data_pasteur/12_epigenome/test_dir/sample2/sample2_2.fq.gz
+    output: /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2, /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz, /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz
+    log: logs/1.trimmed/sample2.log
+    jobid: 6
+    benchmark: benchmarks/1.trimmed/sample2.benchmark.txt
+    reason: Missing output files: /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz, /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz
+    wildcards: sample=sample2
+    threads: 8
+    resources: tmpdir=/tmp
+
+
+[Tue Sep 26 17:36:49 2023]
+rule soapnuke:
+    input: /home/liuxin/data_pasteur/12_epigenome/test_dir/sample1/sample1_1_trimmed.fq.gz, /home/liuxin/data_pasteur/12_epigenome/test_dir/sample1/sample1_2_trimmed.fq.gz
+    output: /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1, /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz, /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz
+    log: logs/1.trimmed/sample1.log
+    jobid: 3
+    benchmark: benchmarks/1.trimmed/sample1.benchmark.txt
+    reason: Missing output files: /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz, /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz
+    wildcards: sample=sample1
+    threads: 8
+    resources: tmpdir=/tmp
+
+[Tue Sep 26 17:36:50 2023]
+Finished job 6.
+1 of 9 steps (11%) done
+Select jobs to execute...
+
+[Tue Sep 26 17:36:50 2023]
+rule bismark_alignment:
+    input: /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz, /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz
+    output: /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample2, /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample2/sample2_1_trimmed_bismark_bt2_pe.bam
+    log: logs/2.bismark_align/sample2.log
+    jobid: 5
+    benchmark: benchmarks/2.bismark_align/sample2.benchmark.txt
+    reason: Missing output files: /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample2/sample2_1_trimmed_bismark_bt2_pe.bam; Input files updated by another job: /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_1_trimmed.fq.gz, /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample2/sample2_2_trimmed.fq.gz
+    wildcards: sample=sample2
+    threads: 6
+    resources: tmpdir=/tmp, mem_mb=122880, mem_mib=117188
+
+[Tue Sep 26 17:36:50 2023]
+Finished job 3.
+2 of 9 steps (22%) done
+Select jobs to execute...
+
+[Tue Sep 26 17:36:50 2023]
+rule bismark_alignment:
+    input: /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz, /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz
+    output: /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample1, /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample1/sample1_1_trimmed_bismark_bt2_pe.bam
+    log: logs/2.bismark_align/sample1.log
+    jobid: 2
+    benchmark: benchmarks/2.bismark_align/sample1.benchmark.txt
+    reason: Missing output files: /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample1/sample1_1_trimmed_bismark_bt2_pe.bam; Input files updated by another job: /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz, /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz
+    wildcards: sample=sample1
+    threads: 6
+    resources: tmpdir=/tmp, mem_mb=122880, mem_mib=117188
+
+[Tue Sep 26 17:59:32 2023]
+Finished job 2.
+3 of 9 steps (33%) done
+Select jobs to execute...
+
+[Tue Sep 26 17:59:32 2023]
+rule bismark_duplicate:
+    input: /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample1/sample1_1_trimmed_bismark_bt2_pe.bam
+    output: /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1, /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1/sample1_1_trimmed_bismark_bt2_pe.deduplicated.bam
+    log: logs/3.bismark_deduplicate/sample1.log
+    jobid: 1
+    benchmark: benchmarks/3.bismark_deduplicate/sample1.benchmark.txt
+    reason: Missing output files: /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1/sample1_1_trimmed_bismark_bt2_pe.deduplicated.bam; Input files updated by another job: /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample1/sample1_1_trimmed_bismark_bt2_pe.bam
+    wildcards: sample=sample1
+    threads: 8
+    resources: tmpdir=/tmp
+
+[Tue Sep 26 17:59:32 2023]
+Error in rule bismark_duplicate:
+    jobid: 1
+    input: /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample1/sample1_1_trimmed_bismark_bt2_pe.bam
+    output: /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1, /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1/sample1_1_trimmed_bismark_bt2_pe.deduplicated.bam
+    log: logs/3.bismark_deduplicate/sample1.log (check log file(s) for error details)
+    shell:
+        deduplicate_bismark -p --multicore 8 --bam /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample1/sample1_1_trimmed_bismark_bt2_pe.bam --output_dir /home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1 2> logs/3.bismark_deduplicate/sample1.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job bismark_duplicate since they might be corrupted:
+/home/liuxin/data_pasteur/12_epigenome/WGBS/3.bismark_deduplicate/sample1
+[Tue Sep 26 17:59:32 2023]
+Finished job 5.
+4 of 9 steps (44%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-09-26T173636.090270.snakemake.log

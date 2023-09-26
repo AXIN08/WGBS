@@ -1,0 +1,1 @@
+Position in reads	Percentage of Q20+ bases	Percentage of Q30+ bases	Percentage of Clean Q20+	Percentage of Clean Q30+

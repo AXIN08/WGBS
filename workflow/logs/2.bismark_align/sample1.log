@@ -1,0 +1,530 @@
+Bowtie 2 seems to be working fine (tested command 'bowtie2 --version' [2.5.1])
+Output format is BAM (default)
+Alignments will be written out in BAM format. Samtools found here: '/home/liuxin/mambaforge/envs/snakemake/bin/samtools'
+Reference genome folder provided is /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/	(absolute path is '/home/liuxin/data_pasteur/12_epigenome/CHM13_ref/)'
+FastQ format assumed (by default)
+
+Input files to be analysed (in current folder '/home/liuxin/data_pasteur/12_epigenome/WGBS/workflow'):
+/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz
+/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz
+Library is assumed to be strand-specific (directional), alignments to strands complementary to the original top or bottom strands will be ignored (i.e. not performed!)
+Output will be written into the directory: /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample1/
+Summary of all aligner options:	-q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+Running Bismark Parallel version. Number of parallel instances to be spawned: 6
+
+Current working directory is: /home/liuxin/data_pasteur/12_epigenome/WGBS/workflow
+
+Now reading in and storing sequence information of the genome specified in: /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/
+
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz and /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz and /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz and /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz and /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz and /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz and /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz for PID: 0 and offset 2 (sequences written out: 288)
+
+Using the subset file >sample1_1_trimmed.fq.gz.temp.2< as new in-file 1 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz<)
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz for PID: 0 and offset 1 (sequences written out: 289)
+
+Using the subset file >sample1_1_trimmed.fq.gz.temp.1< as new in-file 1 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz<)
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz for PID: 0 and offset 3 (sequences written out: 288)
+
+Using the subset file >sample1_1_trimmed.fq.gz.temp.3< as new in-file 1 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz<)
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz for PID: 0 and offset 4 (sequences written out: 288)
+
+Using the subset file >sample1_1_trimmed.fq.gz.temp.4< as new in-file 1 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz<)
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz for PID: 0 and offset 2 (sequences written out: 288)
+
+Using the subset file >sample1_2_trimmed.fq.gz.temp.2< as new in-file 2 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file sample1_1_trimmed.fq.gz.temp.2 to sample1_1_trimmed.fq.gz.temp.2_C_to_T.fastq
+
+Created C -> T converted version of the FastQ file sample1_1_trimmed.fq.gz.temp.2 (288 sequences in total)
+
+Writing a G -> A converted version of the input file sample1_2_trimmed.fq.gz.temp.2 to sample1_2_trimmed.fq.gz.temp.2_G_to_A.fastq
+
+Created G -> A converted version of the FastQ file sample1_2_trimmed.fq.gz.temp.2 (288 sequences in total)
+
+Input files are sample1_1_trimmed.fq.gz.temp.2_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.2_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from sample1_1_trimmed.fq.gz.temp.2_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.2_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz for PID: 1851116 and offset 6 (sequences written out: 288)
+
+Using the subset file >sample1_1_trimmed.fq.gz.temp.6< as new in-file 1 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz<)
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz for PID: 0 and offset 5 (sequences written out: 288)
+
+Using the subset file >sample1_1_trimmed.fq.gz.temp.5< as new in-file 1 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz<)
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz for PID: 0 and offset 1 (sequences written out: 289)
+
+Using the subset file >sample1_2_trimmed.fq.gz.temp.1< as new in-file 2 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file sample1_1_trimmed.fq.gz.temp.1 to sample1_1_trimmed.fq.gz.temp.1_C_to_T.fastq
+
+Created C -> T converted version of the FastQ file sample1_1_trimmed.fq.gz.temp.1 (289 sequences in total)
+
+Writing a G -> A converted version of the input file sample1_2_trimmed.fq.gz.temp.1 to sample1_2_trimmed.fq.gz.temp.1_G_to_A.fastq
+
+Created G -> A converted version of the FastQ file sample1_2_trimmed.fq.gz.temp.1 (289 sequences in total)
+
+Input files are sample1_1_trimmed.fq.gz.temp.1_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.1_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from sample1_1_trimmed.fq.gz.temp.1_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.1_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz for PID: 0 and offset 3 (sequences written out: 288)
+
+Using the subset file >sample1_2_trimmed.fq.gz.temp.3< as new in-file 2 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file sample1_1_trimmed.fq.gz.temp.3 to sample1_1_trimmed.fq.gz.temp.3_C_to_T.fastq
+
+Created C -> T converted version of the FastQ file sample1_1_trimmed.fq.gz.temp.3 (288 sequences in total)
+
+Writing a G -> A converted version of the input file sample1_2_trimmed.fq.gz.temp.3 to sample1_2_trimmed.fq.gz.temp.3_G_to_A.fastq
+
+Created G -> A converted version of the FastQ file sample1_2_trimmed.fq.gz.temp.3 (288 sequences in total)
+
+Input files are sample1_1_trimmed.fq.gz.temp.3_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.3_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from sample1_1_trimmed.fq.gz.temp.3_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.3_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz for PID: 0 and offset 4 (sequences written out: 288)
+
+Using the subset file >sample1_2_trimmed.fq.gz.temp.4< as new in-file 2 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file sample1_1_trimmed.fq.gz.temp.4 to sample1_1_trimmed.fq.gz.temp.4_C_to_T.fastq
+
+Created C -> T converted version of the FastQ file sample1_1_trimmed.fq.gz.temp.4 (288 sequences in total)
+
+Writing a G -> A converted version of the input file sample1_2_trimmed.fq.gz.temp.4 to sample1_2_trimmed.fq.gz.temp.4_G_to_A.fastq
+
+Created G -> A converted version of the FastQ file sample1_2_trimmed.fq.gz.temp.4 (288 sequences in total)
+
+Input files are sample1_1_trimmed.fq.gz.temp.4_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.4_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from sample1_1_trimmed.fq.gz.temp.4_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.4_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz for PID: 1851116 and offset 6 (sequences written out: 288)
+
+Using the subset file >sample1_2_trimmed.fq.gz.temp.6< as new in-file 2 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file sample1_1_trimmed.fq.gz.temp.6 to sample1_1_trimmed.fq.gz.temp.6_C_to_T.fastq
+
+Created C -> T converted version of the FastQ file sample1_1_trimmed.fq.gz.temp.6 (288 sequences in total)
+
+Writing a G -> A converted version of the input file sample1_2_trimmed.fq.gz.temp.6 to sample1_2_trimmed.fq.gz.temp.6_G_to_A.fastq
+
+Created G -> A converted version of the FastQ file sample1_2_trimmed.fq.gz.temp.6 (288 sequences in total)
+
+Input files are sample1_1_trimmed.fq.gz.temp.6_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.6_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from sample1_1_trimmed.fq.gz.temp.6_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.6_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Finished subdividing /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz for PID: 0 and offset 5 (sequences written out: 288)
+
+Using the subset file >sample1_2_trimmed.fq.gz.temp.5< as new in-file 2 (instead of >/home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file sample1_1_trimmed.fq.gz.temp.5 to sample1_1_trimmed.fq.gz.temp.5_C_to_T.fastq
+
+Created C -> T converted version of the FastQ file sample1_1_trimmed.fq.gz.temp.5 (288 sequences in total)
+
+Writing a G -> A converted version of the input file sample1_2_trimmed.fq.gz.temp.5 to sample1_2_trimmed.fq.gz.temp.5_G_to_A.fastq
+
+Created G -> A converted version of the FastQ file sample1_2_trimmed.fq.gz.temp.5 (288 sequences in total)
+
+Input files are sample1_1_trimmed.fq.gz.temp.5_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.5_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /home/liuxin/data_pasteur/12_epigenome/CHM13_ref/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from sample1_1_trimmed.fq.gz.temp.5_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.5_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Found first alignment:
+V350160023L3C002R00300001294/1/1	99	chr18_CT_converted	48724808	42	150M	=	48724994	336	GTTATTTAATTTAGTGTAAATTAAAGGGGATTATTATAAGAATATGGAGTGTATTAGGTTGTTTTTGTATTGTTATAAAGAAATATTTAAGGTTAAGTGATTTATAAGAAAAGAGGTTTAATTGGTTTATGATTTTGTAGGATGTATAGG	ACCCCAACACDACB?DCEDCBDEBDBB9?ACCCADDDEEDDEBBBECC>AF@BDCB@C;DF@AC@7ECDCCCACCBEDCF>EDAECCDEA@CBDEDEAACC@AEAB@EEDDB;A?C@CCBDBCBBCABCA@@B?BCCCCC@EDCAEDED=	AS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:150	YS:i:0	YT:Z:CP
+V350160023L3C002R00300001294/2/2	147	chr18_CT_converted	48724994	42	150M	=	48724808	-336	AGGAAGTTTTATTTATGGTGTAAGGTGAAATGAGAGTTTTTAAGTAATATGGTGAAAGGAGAAGTGAGAGAGAGAGAGAGAGAGAGAGAGATAGAGGTGGGGAGGTGTTATATATTTTTGAATGATTAGATTTTATATGAATTTATTTAT	BAE<=E3&@1??5B-7?A1A?7A:>=CC0@@ACA???&=8ED48=B89@9CB:>=+CA7@?>31EFAAAABBBBBDBBCAADA@B@B6C<AACACDA@A>AAD=ADCDA@EDBCC:BABABCAC@CBCDCC=ACAEDEDAA?BDBBCDCA	AS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:150	YS:i:0	YT:Z:CP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from sample1_1_trimmed.fq.gz.temp.2_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.2_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+V350160023L3C002R00300001354/1/1	77	*	0	0	*	*	0	0	GTTTAAAAAAAAAAGAAAGATATATTTTATTTTGGTTTAAGATATTGGTTGGGGATTTTTGTTATATGAAGTGGAATAAAATTTTAATTGATGTAGTGAGATTGAAATATATAGGGAAGGAGGAGTTTTTGTTTAGGAGTAAGATAATAA	CCCBEEEEDCEEA@E?FAFDBFAECB?D#BCCAF4AABC<CBAEAAH=6B1<0D8C@A.<B:8E=ECBCAAB;FD=@E@DECA5?FEDAFEB:B?G?E#>CBB<ADEDE?ECD<-BEC>B8BB=FBB<AAFD+DEE$BE1#>DD@EECE8	YT:Z:UP
+V350160023L3C002R00300001354/2/2	141	*	0	0	*	*	0	0	TTCATTAATAATTACAATATTACCAAAATTAAAAACTTTAATTATATACAAAATACAAATTCCTTAACACAAAATACAATACATATTATTATCTCTCTCCTAAACAAAAACTCCTCCTTCCCTATATATTTCAATCACACTACATCAATT	ACCAA?EABBECDBBC>CEC?BBECDC@D?CEBD4@AA@ECCCEBEAEGD@B@CCADEDBBE>A?CBDEBDBC@>BF9BBBDDCEA5E=BCA@?D=GCFBAD&E?BC4E:F=@A??AABF7EBCAE><?@BC)BCEAA>AC9AD@BADA<	YT:Z:UP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from sample1_1_trimmed.fq.gz.temp.5_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.5_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+V350160023L3C002R00300001237/1/1	99	chr5_CT_converted	157530390	0	150M	=	157530441	201	AGTTAAATTATGAGTGAATTTTTATTTATAATTGTTTTAAAGAGAATAGAATATTTGGGAATTTAATTTATAAGGGATATGAAGGATTTTTTTAAGGAGAATTATAAATTATTGTTAAATGAAATAAAAGAGGATATAAATAAATGGAAG	BCBDBDADAAAE<ABECCA?@@DC?ACE@EBCAB?@AAB?EBAC@EABB?CCAA@B@7>EBB@@BEACBBADE==@?AEDCED@5@DC8BB=CEB?<?BDDBCD=EA@DAEBCBDBCDDDABEEBCEAE:CD;BDFAECCDEBDC??@B@	AS:i:-24	XS:i:-24	XN:i:0	XM:i:4	XO:i:0	XG:i:0	NM:i:4	MD:Z:36A5G5A7A93	YS:i:-6	YT:Z:CP
+V350160023L3C002R00300001237/2/2	147	chr5_CT_converted	157530441	0	150M	=	157530390	-201	TATTTGGGAATTTAATTTATAAGGGATATGAAGGATTTTTTTAAGGAGAATTATAAATTATTGTTAAATGAAATAAAAGAGGATATAAATAAATGGAAGAATATTTTATGTTTATGGATAGGAAGAATTAATATTGTGAAAATGGTTATA	ECAB>B:CDD@CBA>:@@:C@CAA;@D@D>ACABA=?@3AAB;AABBA8@?A=B<B@DCABE?=DC9AEDAACB@9@CBA@AAABBCC?B@?BAE>>BAABEAB>@DAE@B;AA@?ABDAAA@DABACA=@B@BE?CC?C@?B?A@FAAC	AS:i:-6	XS:i:-24	XN:i:0	XM:i:1	XO:i:0	XG:i:0	NM:i:1	MD:Z:5A144	YS:i:-24	YT:Z:CP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from sample1_1_trimmed.fq.gz.temp.1_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.1_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+V350160023L3C002R00300001295/1/1	77	*	0	0	*	*	0	0	GAATGGAAAGGAATGTAATTGAATGAAATAAATTTGAATGGAATGGAATGGAATGTAATAGAATAGAATGGAATGGAGTTGATTGGAATTAATTTGAGTTTAATTGAAAGGAATGGAAAGAAATGGAATTTAAGAGAATTGAATGGAATG	B6>7,BCDBG'=EBGBFDDDD*ECFEEEDDD6ADC6=DCG4EECFF?FCCEBDBF-AE<EE<ECDE)FBG$ACBHDE?DDEDD>G.EE<@FE;C@ECGB:DEACECC>=97EDC?@EE@G,DDDE?DCDACFBD=ECC1AHEECH27DDF	YT:Z:UP
+V350160023L3C002R00300001295/2/2	141	*	0	0	*	*	0	0	TCCATTCCATTTCAATCCATTACACTCAATTACACTCTAATTAATTCCATTACATTCCATTCCACTCCATTCCATTCCATTCCATTCCACTCCATTCCATTCAATTCTCTTAAATTCCATTCCTTTCCAATCCTTTCAATTAAACTCAAA	C;FB7CHEDCC9EHDD<FC9CE7DGCFEBCDCG=EBHC;ED7ECB@H:E@CFGE?DHFE?7<HD+CH<@BCHHEBCH<:DC;H%BBFF6+CHHEDCHBEC1ECEDDHCGB;E4D=CF=B6=FEC.BG<=,@;HC5D>GE9DD;EGCEE*C	YT:Z:UP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from sample1_1_trimmed.fq.gz.temp.3_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.3_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+V350160023L3C002R00300001297/1/1	99	chr10_CT_converted	124264448	42	150M	=	124264539	241	TTTTGAGGAGAAATTTAAATTTGTTGTAGAAATTTGTATAAGTAATAAAAAGTGGAATGTTAATTTTTAAGAGAATGGGGAAAATGTTTTTAGGGTATGTTAGAGATTTTTGTGGTAGTTTTTTTTATTATAGGTTTAGAGGTTTAGTAG	DDDBCDEDEFECCBACDEDBDCGBDGACBEDEBCCHADBCDFCDFBDBDFEEBHCEEBHCCEEDCABBDECCDECCF@FEDCEEDFA)CADDDCEADBFABDFCFBCACBBGBEFBEGBCDBBADCFCBFCCDDABBFE?CG?ADCHADF	AS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:150	YS:i:0	YT:Z:CP
+V350160023L3C002R00300001297/2/2	147	chr10_CT_converted	124264539	42	150M	=	124264448	-241	AGGGTATGTTAGAGATTTTTGTGGTAGTTTTTTTTATTATAGGTTTAGAGGTTTAGTAGGAAAAAATGGTTTTAGGGGTTTGGTTTAGGGTTTTTTTGTTGTGTGTAGTTTAGGGATTTGTTGTTTTGTATTTTAGTTATTTTAGTTATG	DCAF8ACCAB?FA3DC3ECBEDBEBBFABCDBCCDDC=@BDGCAACDGBFG?@ECCBDCFD@BC,CCFFDB@EDCGDFABEGFCBCDFCFECEEEEBGBDDEHECCCDB=EDGDGAAEEFBEFC@DCGEAEADCBHBBDEDECDDBEDCF	AS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:150	YS:i:0	YT:Z:CP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from sample1_1_trimmed.fq.gz.temp.4_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.4_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+V350160023L3C002R00300001389/1/1	99	chr12_CT_converted	26286932	40	150M	=	26287066	284	GGTGTTTAATTAGTTATGATAAAAATAGAGTATAGAAATTTTGAAAGTTATATATTGATAGATTTGGTTTATTAATTTTAATATTTTGAGTATGTTTTTTTTTTTTTGTTTAATATTTTGAGTAAATTTTTTATGATTTGGTGGTTTTAA	??CCB=CCEABD?=BDBADBECBC@BDA?@@C?EFECB@9C<>?CDD$CEBEBEB<D>CEEEB4DDEC+AEACAD6AA<CE@BB;AABA<-BBFBAC?2C?>B2CDCFB?CECBFB@BC=3DADEAAA;C@AE,DEA?CF?DD;AB@5CC	AS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:150	YS:i:-12	YT:Z:CP
+V350160023L3C002R00300001389/2/2	147	chr12_CT_converted	26287066	40	150M	=	26286932	-284	GATTTGGTGGTTTTAAATTATAGTATTTATTATTTTTAGTTATTTAAGTATAATATGATATATTATGATTAAATGTGTATGGAATAATGATTGTGAATGATGTTAGTTGTTATTTTTGGGGAGATAGGGAAAAAGAGGAGGAAAAGATTT	:A6D0$A>=&DA5A@=0C?<:C??A@,BD@EC:?@/ACC@B>?5CBD?ABB?=?>DABCCCD?CABEBADD?@EBD?DCAED>DB<ABDDD8C:BACDAA@AABCDDCEADCCB>5CCBDEBCDDCEEDCB?BBECBADFDBC.DBD@@C	AS:i:-12	XN:i:0	XM:i:2	XO:i:0	XG:i:0	NM:i:2	MD:Z:20A53A75	YS:i:0	YT:Z:CP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from sample1_1_trimmed.fq.gz.temp.6_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.6_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+V350160023L3C002R00300001294/1/1	77	*	0	0	*	*	0	0	GTTATTTAATTTAGTGTAAATTAAAGGGGATTATTATAAGAATATGGAGTGTATTAGGTTGTTTTTGTATTGTTATAAAGAAATATTTAAGGTTAAGTGATTTATAAGAAAAGAGGTTTAATTGGTTTATGATTTTGTAGGATGTATAGG	ACCCCAACACDACB?DCEDCBDEBDBB9?ACCCADDDEEDDEBBBECC>AF@BDCB@C;DF@AC@7ECDCCCACCBEDCF>EDAECCDEA@CBDEDEAACC@AEAB@EEDDB;A?C@CCBDBCBBCABCA@@B?BCCCCC@EDCAEDED=	YT:Z:UP
+V350160023L3C002R00300001294/2/2	141	*	0	0	*	*	0	0	ATAAATAAATTCATATAAAATCTAATCATTCAAAAATATATAACACCTCCCCACCTCTATCTCTCTCTCTCTCTCTCTCTCTCTCACTTCTCCTTTCACCATATTACTTAAAAACTCTCATTTCACCTTACACCATAAATAAAACTTCCT	ACDCBBDB?AADEDEACA=CCDCBC@CACBABAB:CCBDE@ADCDA=DAA>A@ADCACAA<C6B@B@ADAACBBDBBBBBAAAAFE13>?@7AC+=>:BC9@98B=84DE8=&???ACA@@0CC=>:A7?A1A?7-B5??1@&3E=<EAB	YT:Z:UP
+Found first alignment:
+V350160023L3C002R00300001237/1/1	83	chr5_GA_converted	13685551	35	150M	=	13685500	-201	CTTCCATTTATTTATATCCTCTTTTATTTCATTTAACAATAATTTATAATTCTCCTTAAAAAAATCCTTCATATCCCTTATAAATTAAATTCCCAAATATTCTATTCTCTTTAAAACAATTATAAATAAAAATTCACTCATAATTTAACT	@B@??CDBEDCCEAFDB;DC:EAECBEEBADDDCBDBCBEAD@AE=DCBDDB?<?BEC=BB8CD@5@DECDEA?@==EDABBCAEB@@BBE>7@B@AACC?BBAE@CABE?BAA@?BACBE@ECA?CD@@?ACCEBA<EAAADADBDBCB	AS:i:0	XS:i:-18	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:150	YS:i:0	YT:Z:CP
+V350160023L3C002R00300001237/2/2	163	chr5_GA_converted	13685500	35	150M	=	13685551	201	TATAACCATTTTCACAATATTAATTCTTCCTATCCATAAACATAAAATATTCTTCCATTTATTTATATCCTCTTTTATTTCATTTAACAATAATTTATAATTCTCCTTAAAAAAATCCTTCATATCCCTTATAAATTAAATTCCCAAATA	CAAF@A?B?@C?CC?EB@B@=ACABAD@AAADBA?@AA;B@EAD@>BAEBAAB>>EAB?@B?CCBBAAA@ABC@9@BCAADEA9CD=?EBACD@B<B=A?@8ABBAA;BAA3@?=ABACA>D@D@;AAC@C:@@:>ABC@DDC:B>BACE	AS:i:0	XS:i:-18	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:150	YS:i:0	YT:Z:CP
+Found first alignment:
+V350160023L3C002R00300001389/1/1	77	*	0	0	*	*	0	0	GGTGTTTAATTAGTTATGATAAAAATAGAGTATAGAAATTTTGAAAGTTATATATTGATAGATTTGGTTTATTAATTTTAATATTTTGAGTATGTTTTTTTTTTTTTGTTTAATATTTTGAGTAAATTTTTTATGATTTGGTGGTTTTAA	??CCB=CCEABD?=BDBADBECBC@BDA?@@C?EFECB@9C<>?CDD$CEBEBEB<D>CEEEB4DDEC+AEACAD6AA<CE@BB;AABA<-BBFBAC?2C?>B2CDCFB?CECBFB@BC=3DADEAAA;C@AE,DEA?CF?DD;AB@5CC	YT:Z:UP
+V350160023L3C002R00300001389/2/2	141	*	0	0	*	*	0	0	AAATCTTTTCCTCCTCTTTTTCCCTATCTCCCCAAAAATAACAACTAACATCATTCACAATCATTATTCCATACACATTTAATCATAATATATCATATTATACTTAAATAACTAAAAATAATAAATACTATAATTTAAAACCACCAAATC	C@@DBD.CBDFDABCEBB?BCDEECDDCBEDBCC5>BCCDAECDDCBAA@AADCAB:C8DDDBA<BD>DEACD?DBE@?DDABEBAC?DCCCBAD>?=?BBA?DBC5?>B@CCA/@?:CE@DB,@A??C:<?C0=@A5AD&=>A$0D6A:	YT:Z:UP
+Found first alignment:
+V350160023L3C002R00300001354/1/1	83	chr13_GA_converted	56690255	23	150M	=	56690170	-235	TTATTATCTTACTCCTAAACAAAAACTCCTCCTTCCCTATATATTTCAATCTCACTACATCAATTAAAATTTTATTCCACTTCATATAACAAAAATCCCCAACCAATATCTTAAACCAAAATAAAATATATCTTTCTTTTTTTTTTAAAC	8ECEE@DD>#1EB$EED+DFAA<BBF=BB8B>CEB-<DCE?EDEDA<BBC>#E?G?B:BEFADEF?5ACED@E@=DF;BAACBCE=E8:B<.A@C8D0<1B6=HAAEABC<CBAA4FACCB#D?BCEAFBDFAF?E@AEECDEEEEBCCC	AS:i:-24	XN:i:0	XM:i:4	XO:i:0	XG:i:0	NM:i:4	MD:Z:9C0T40A69A28	YS:i:-6	YT:Z:CP
+V350160023L3C002R00300001354/2/2	163	chr13_GA_converted	56690170	23	150M	=	56690255	235	TTCATTAATAATTACAATATTACCAAAATTAAAAACTTTAATTATATACAAAATACAAATTCCTTAACACAAAATACAATACATATTATTATCTCTCTCCTAAACAAAAACTCCTCCTTCCCTATATATTTCAATCACACTACATCAATT	ACCAA?EABBECDBBC>CEC?BBECDC@D?CEBD4@AA@ECCCEBEAEGD@B@CCADEDBBE>A?CBDEBDBC@>BF9BBBDDCEA5E=BCA@?D=GCFBAD&E?BC4E:F=@A??AABF7EBCAE><?@BC)BCEAA>AC9AD@BADA<	AS:i:-6	XN:i:0	XM:i:1	XO:i:0	XG:i:0	NM:i:1	MD:Z:69T80	YS:i:-24	YT:Z:CP
+Found first alignment:
+V350160023L3C002R00300001295/1/1	77	*	0	0	*	*	0	0	GAATGGAAAGGAATGTAATTGAATGAAATAAATTTGAATGGAATGGAATGGAATGTAATAGAATAGAATGGAATGGAGTTGATTGGAATTAATTTGAGTTTAATTGAAAGGAATGGAAAGAAATGGAATTTAAGAGAATTGAATGGAATG	B6>7,BCDBG'=EBGBFDDDD*ECFEEEDDD6ADC6=DCG4EECFF?FCCEBDBF-AE<EE<ECDE)FBG$ACBHDE?DDEDD>G.EE<@FE;C@ECGB:DEACECC>=97EDC?@EE@G,DDDE?DCDACFBD=ECC1AHEECH27DDF	YT:Z:UP
+V350160023L3C002R00300001295/2/2	141	*	0	0	*	*	0	0	TCCATTCCATTTCAATCCATTACACTCAATTACACTCTAATTAATTCCATTACATTCCATTCCACTCCATTCCATTCCATTCCATTCCACTCCATTCCATTCAATTCTCTTAAATTCCATTCCTTTCCAATCCTTTCAATTAAACTCAAA	C;FB7CHEDCC9EHDD<FC9CE7DGCFEBCDCG=EBHC;ED7ECB@H:E@CFGE?DHFE?7<HD+CH<@BCHHEBCH<:DC;H%BBFF6+CHHEDCHBEC1ECEDDHCGB;E4D=CF=B6=FEC.BG<=,@;HC5D>GE9DD;EGCEE*C	YT:Z:UP
+Found first alignment:
+V350160023L3C002R00300001297/1/1	77	*	0	0	*	*	0	0	TTTTGAGGAGAAATTTAAATTTGTTGTAGAAATTTGTATAAGTAATAAAAAGTGGAATGTTAATTTTTAAGAGAATGGGGAAAATGTTTTTAGGGTATGTTAGAGATTTTTGTGGTAGTTTTTTTTATTATAGGTTTAGAGGTTTAGTAG	DDDBCDEDEFECCBACDEDBDCGBDGACBEDEBCCHADBCDFCDFBDBDFEEBHCEEBHCCEEDCABBDECCDECCF@FEDCEEDFA)CADDDCEADBFABDFCFBCACBBGBEFBEGBCDBBADCFCBFCCDDABBFE?CG?ADCHADF	YT:Z:UP
+V350160023L3C002R00300001297/2/2	141	*	0	0	*	*	0	0	CATAACTAAAATAACTAAAATACAAAACAACAAATCCCTAAACTACACACAACAAAAAAACCCTAAACCAAACCCCTAAAACCATTTTTTCCTACTAAACCTCTAAACCTATAATAAAAAAAACTACCACAAAAATCTCTAACATACCCT	FCDEBDDCEDEDBBHBCDAEAEGCD@CFEBFEEAAGDGDE=BDCCCEHEDDBGBEEEECEFCFDCBCFGEBAFDGCDE@BDFFCC,CB@DFCDBCCE@?GFBGDCAACGDB@=CDDCCBDCBAFBBEBDEBCE3CD3AF?BACCA8FACD	YT:Z:UP
+
+>>> Writing bisulfite mapping results to sample1_1_trimmed.fq.gz.temp.2_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to sample1_1_trimmed.fq.gz.temp.1_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to sample1_1_trimmed.fq.gz.temp.4_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to sample1_1_trimmed.fq.gz.temp.6_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to sample1_1_trimmed.fq.gz.temp.5_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to sample1_1_trimmed.fq.gz.temp.3_bismark_bt2_pe.bam <<<
+
+
+Reading in the sequence files sample1_1_trimmed.fq.gz.temp.2 and sample1_2_trimmed.fq.gz.temp.2
+288 reads; of these:
+  288 (100.00%) were paired; of these:
+    151 (52.43%288) aligned concordantly 0 times reads; of these:
+    115
+ (  39.93288% () aligned concordantly exactly 1 time
+    22 (7.64%) aligned concordantly >1 times
+47.57% overall alignment rate
+100.00%) were paired; of these:
+    166 (57.64%) aligned concordantly 0 times
+    104 (36.11%) aligned concordantly exactly 1 time
+    18 (6.25%) aligned concordantly >1 times
+42.36% overall alignment rate
+
+Reading in the sequence files sample1_1_trimmed.fq.gz.temp.1 and sample1_2_trimmed.fq.gz.temp.1
+289 reads; of these:
+  289 (100.00%) were paired; of these:
+    159 (55.02%) aligned concordantly 0 times
+    116 (40.14%) aligned concordantly exactly 1 time
+289     reads; of these:14 (4.84
+%  ) aligned concordantly >1 times289
+ (44.98% overall alignment rate
+100.00%) were paired; of these:
+    165 (57.09%) aligned concordantly 0 times
+    106 (36.68%) aligned concordantly exactly 1 time
+    18 (6.23%) aligned concordantly >1 times
+42.91% overall alignment rate
+
+Reading in the sequence files sample1_1_trimmed.fq.gz.temp.4 and sample1_2_trimmed.fq.gz.temp.4
+
+Reading in the sequence files sample1_1_trimmed.fq.gz.temp.6 and sample1_2_trimmed.fq.gz.temp.6
+288 reads; of these:
+  288 (100.00%) were paired; of these:
+    162288 ( reads; of these:56.25%
+) aligned concordantly 0 times  
+288288     ( reads; of these:107 (
+37.15  %288) aligned concordantly exactly 1 time (
+100.00    %19288) were paired; of these:100.00 ( reads; of these:
+%6.60    
+) were paired; of these:%156  
+) aligned concordantly >1 times (288    
+54.17 (15843.75% (%) aligned concordantly 0 times54.86 overall alignment rate
+%100.00
+    ) aligned concordantly 0 times%111
+) were paired; of these: (    
+38.54110    % (155) aligned concordantly exactly 1 time38.19 (
+%53.82    ) aligned concordantly exactly 1 time%21
+) aligned concordantly 0 times (    
+7.2920    % (116) aligned concordantly >1 times6.94 (
+%40.2845.83) aligned concordantly >1 times%%
+) aligned concordantly exactly 1 time overall alignment rate45.14
+
+%     overall alignment rate17
+ (5.90%) aligned concordantly >1 times
+46.18% overall alignment rate
+
+Reading in the sequence files sample1_1_trimmed.fq.gz.temp.5 and sample1_2_trimmed.fq.gz.temp.5
+288 reads; of these:
+  288 (288 reads; of these:
+  100.00288% () were paired; of these:
+    164 (56.94%) aligned concordantly 0 times
+    107 (37.15%100.00) aligned concordantly exactly 1 time%
+) were paired; of these:    
+17     (1585.90 (%54.86) aligned concordantly >1 times%
+) aligned concordantly 0 times43.06
+%     overall alignment rate117
+ (40.62%) aligned concordantly exactly 1 time
+    13 (4.51%) aligned concordantly >1 times
+45.14% overall alignment rate
+
+Reading in the sequence files sample1_1_trimmed.fq.gz.temp.3 and sample1_2_trimmed.fq.gz.temp.3
+288 reads; of these:
+  288 (100.00%) were paired; of these:
+    177 (61.46%) aligned concordantly 0 times
+    98 (34.03%) aligned concordantly exactly 1 time
+    13 (2884.51 reads; of these:%) aligned concordantly >1 times
+
+  38.54288% ( overall alignment rate
+100.00%) were paired; of these:
+    148 (51.39%) aligned concordantly 0 times
+    119 (41.32%) aligned concordantly exactly 1 time
+    21 (7.29%) aligned concordantly >1 times
+48.61% overall alignment rate
+Processed 288 sequences in total
+
+
+Successfully deleted the temporary files sample1_1_trimmed.fq.gz.temp.2_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.2_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	288
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	11707
+
+Total methylated C's in CpG context:	514
+Total methylated C's in CHG context:	19
+Total methylated C's in CHH context:	40
+Total methylated C's in Unknown context:	2
+
+Total unmethylated C's in CpG context:	141
+Total unmethylated C's in CHG context:	2603
+Total unmethylated C's in CHH context:	8390
+Total unmethylated C's in Unknown context:	7
+
+C methylated in CpG context:	78.5%
+C methylated in CHG context:	0.7%
+C methylated in CHH context:	0.5%
+C methylated in Unknown context (CN or CHN):	22.2%
+
+
+Processed 288 sequences in total
+
+
+Successfully deleted the temporary files sample1_1_trimmed.fq.gz.temp.4_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.4_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	288
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	12455
+
+Total methylated C's in CpG context:	625
+Total methylated C's in CHG context:	16
+Total methylated C's in CHH context:	57
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	105
+Total unmethylated C's in CHG context:	2901
+Total unmethylated C's in CHH context:	8751
+Total unmethylated C's in Unknown context:	4
+
+C methylated in CpG context:	85.6%
+C methylated in CHG context:	0.5%
+C methylated in CHH context:	0.6%
+C methylated in Unknown context (CN or CHN):	0.0%
+
+
+Processed 289 sequences in total
+
+
+Successfully deleted the temporary files sample1_1_trimmed.fq.gz.temp.1_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.1_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	289
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	12370
+
+Total methylated C's in CpG context:	605
+Total methylated C's in CHG context:	15
+Total methylated C's in CHH context:	42
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	82
+Total unmethylated C's in CHG context:	2736
+Total unmethylated C's in CHH context:	8890
+Total unmethylated C's in Unknown context:	8
+
+C methylated in CpG context:	88.1%
+C methylated in CHG context:	0.5%
+C methylated in CHH context:	0.5%
+C methylated in Unknown context (CN or CHN):	0.0%
+
+
+Processed 288 sequences in total
+
+
+Successfully deleted the temporary files sample1_1_trimmed.fq.gz.temp.6_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.6_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	288
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	11727
+
+Total methylated C's in CpG context:	562
+Total methylated C's in CHG context:	20
+Total methylated C's in CHH context:	52
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	112
+Total unmethylated C's in CHG context:	2733
+Total unmethylated C's in CHH context:	8248
+Total unmethylated C's in Unknown context:	0
+
+C methylated in CpG context:	83.4%
+C methylated in CHG context:	0.7%
+C methylated in CHH context:	0.6%
+Can't determine percentage of methylated Cs in Unknown context (CN or CHN) if value was 0
+
+
+Now waiting for all child processes to complete
+Processed 288 sequences in total
+
+
+Successfully deleted the temporary files sample1_1_trimmed.fq.gz.temp.5_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.5_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	288
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	12302
+
+Total methylated C's in CpG context:	663
+Total methylated C's in CHG context:	13
+Total methylated C's in CHH context:	46
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	81
+Total unmethylated C's in CHG context:	2824
+Total unmethylated C's in CHH context:	8675
+Total unmethylated C's in Unknown context:	1
+
+C methylated in CpG context:	89.1%
+C methylated in CHG context:	0.5%
+C methylated in CHH context:	0.5%
+C methylated in Unknown context (CN or CHN):	0.0%
+
+
+Processed 288 sequences in total
+
+
+Successfully deleted the temporary files sample1_1_trimmed.fq.gz.temp.3_C_to_T.fastq and sample1_2_trimmed.fq.gz.temp.3_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	288
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	11634
+
+Total methylated C's in CpG context:	529
+Total methylated C's in CHG context:	8
+Total methylated C's in CHH context:	38
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	136
+Total unmethylated C's in CHG context:	2789
+Total unmethylated C's in CHH context:	8134
+Total unmethylated C's in Unknown context:	8
+
+C methylated in CpG context:	79.5%
+C methylated in CHG context:	0.3%
+C methylated in CHH context:	0.5%
+C methylated in Unknown context (CN or CHN):	0.0%
+
+
+
+
+Right, cleaning up now...
+
+Deleting temporary sequence files...
+Now merging BAM files sample1_1_trimmed.fq.gz.temp.1_bismark_bt2_pe.bam sample1_1_trimmed.fq.gz.temp.2_bismark_bt2_pe.bam sample1_1_trimmed.fq.gz.temp.3_bismark_bt2_pe.bam sample1_1_trimmed.fq.gz.temp.4_bismark_bt2_pe.bam sample1_1_trimmed.fq.gz.temp.5_bismark_bt2_pe.bam sample1_1_trimmed.fq.gz.temp.6_bismark_bt2_pe.bam into >>> sample1_1_trimmed_bismark_bt2_pe.bam <<<
+Merging from file >> sample1_1_trimmed.fq.gz.temp.1_bismark_bt2_pe.bam <<
+Merging from file >> sample1_1_trimmed.fq.gz.temp.2_bismark_bt2_pe.bam <<
+Merging from file >> sample1_1_trimmed.fq.gz.temp.3_bismark_bt2_pe.bam <<
+Merging from file >> sample1_1_trimmed.fq.gz.temp.4_bismark_bt2_pe.bam <<
+Merging from file >> sample1_1_trimmed.fq.gz.temp.5_bismark_bt2_pe.bam <<
+Merging from file >> sample1_1_trimmed.fq.gz.temp.6_bismark_bt2_pe.bam <<
+
+Deleting temporary BAM files...
+Writing report to /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample1/sample1_1_trimmed_bismark_bt2_PE_report.txt
+Now merging temporary reports sample1_1_trimmed.fq.gz.temp.1_bismark_bt2_PE_report.txt sample1_1_trimmed.fq.gz.temp.2_bismark_bt2_PE_report.txt sample1_1_trimmed.fq.gz.temp.3_bismark_bt2_PE_report.txt sample1_1_trimmed.fq.gz.temp.4_bismark_bt2_PE_report.txt sample1_1_trimmed.fq.gz.temp.5_bismark_bt2_PE_report.txt sample1_1_trimmed.fq.gz.temp.6_bismark_bt2_PE_report.txt into >>> /home/liuxin/data_pasteur/12_epigenome/WGBS/2.bismark_align/sample1/sample1_1_trimmed_bismark_bt2_PE_report.txt <<<
+Merging from file >> sample1_1_trimmed.fq.gz.temp.1_bismark_bt2_PE_report.txt <<
+Merging from file >> sample1_1_trimmed.fq.gz.temp.2_bismark_bt2_PE_report.txt <<
+Merging from file >> sample1_1_trimmed.fq.gz.temp.3_bismark_bt2_PE_report.txt <<
+Merging from file >> sample1_1_trimmed.fq.gz.temp.4_bismark_bt2_PE_report.txt <<
+Merging from file >> sample1_1_trimmed.fq.gz.temp.5_bismark_bt2_PE_report.txt <<
+Merging from file >> sample1_1_trimmed.fq.gz.temp.6_bismark_bt2_PE_report.txt <<
+
+Printing a final merged alignment report for all individual sub-reports
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	1729
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	72195
+
+Total methylated C's in CpG context:	3498
+Total methylated C's in CHG context:	91
+Total methylated C's in CHH context:	275
+Total methylated C's in Unknown context:	2
+
+Total unmethylated C's in CpG context:	657
+Total unmethylated C's in CHG context:	16586
+Total unmethylated C's in CHH context:	51088
+Total unmethylated C's in Unknown context:	28
+
+C methylated in CpG context:	84.2%
+C methylated in CHG context:	0.5%
+C methylated in CHH context:	0.5%
+C methylated in Unknown context (CN or CHN):	6.7%
+
+
+Deleting temporary report files...
+Bismark completed in 0d 0h 22m 38s
+
+====================
+Bismark run complete
+====================
+

@@ -1,0 +1,2 @@
+Item				Total	Percentage	fastq1	fastq2	overlap
+Total filtered read pair number	0	100.00%		0	0	0

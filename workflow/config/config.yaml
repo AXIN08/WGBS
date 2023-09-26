@@ -1,0 +1,8 @@
+outdir: /home/liuxin/data_pasteur/12_epigenome/WGBS
+ref: /home/liuxin/data_pasteur/12_epigenome/CHM13_ref
+sample: /home/liuxin/data_pasteur/12_epigenome/test_dir/sample.txt
+threads:
+  bis_align: 6
+  bis_call: 8
+  bis_dedul: 8
+  soapnuke: 8
