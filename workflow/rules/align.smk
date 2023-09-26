@@ -7,9 +7,9 @@ rule bismark_alignment:
         bam = f"{OUTPUT_DIR}/2.bismark_align/{{sample}}/{{sample}}_1_trimmed_bismark_bt2_pe.bam"
         #html = f"{OUTPUT_DIR}/3.bismark_align/{{sample}}/Testpaired_PE_report.html"
     benchmark:
-        "benchmarks/2.bismark_align/{sample}.benchmark.txt"
+        "{OUTPUT_DIR}/benchmarks/2.bismark_align/{sample}.benchmark.txt"
     log:
-        "logs/2.bismark_align/{sample}.log"
+        "{OUTPUT_DIR}/logs/2.bismark_align/{sample}.log"
     resources: mem_mb = 122880 
     threads: config["threads"]["bis_align"]
     shell:
