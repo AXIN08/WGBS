@@ -1,8 +1,0 @@
-Building DAG of jobs...
-MissingInputException in rule soapnuke in file /home/liuxin/data_pasteur/12_epigenome/WGBS/snakefile.py, line 31:
-Missing input files for rule soapnuke:
-    output: /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1, /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_1_trimmed.fq.gz, /home/liuxin/data_pasteur/12_epigenome/WGBS/1.trimmed/sample1/sample1_2_trimmed.fq.gz
-    wildcards: sample=sample1
-    affected files:
-        /home/liuxin/data_pasteur/12_epigenome/test_dir/sample1/sample1_1.fq.gz
-        /home/liuxin/data_pasteur/12_epigenome/test_dir/sample1/sample1_2.fq.gz

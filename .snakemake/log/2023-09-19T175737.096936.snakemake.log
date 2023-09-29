@@ -1,9 +1,0 @@
-FileNotFoundError in file /home/liuxin/data_pasteur/12_epigenome/WGBS/Snakefile.py, line 11:
-[Errno 2] No such file or directory: 'config[sample]'
-  File "/home/liuxin/data_pasteur/12_epigenome/WGBS/Snakefile.py", line 16, in <module>
-  File "/home/liuxin/data_pasteur/12_epigenome/WGBS/Snakefile.py", line 11, in parse_samples
-  File "/home/liuxin/mambaforge/envs/snakemake/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 912, in read_csv
-  File "/home/liuxin/mambaforge/envs/snakemake/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 577, in _read
-  File "/home/liuxin/mambaforge/envs/snakemake/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1407, in __init__
-  File "/home/liuxin/mambaforge/envs/snakemake/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1661, in _make_engine
-  File "/home/liuxin/mambaforge/envs/snakemake/lib/python3.9/site-packages/pandas/io/common.py", line 859, in get_handle
