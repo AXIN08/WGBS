@@ -3,8 +3,8 @@ rule soapnuke:
         fastq_1 = lambda wildcards: get_path(samples_df, wildcards, 'fq1'),
         fastq_2 = lambda wildcards: get_path(samples_df, wildcards, 'fq2')
     output:
-        temp(f"{OUTPUT_DIR}/1.trimmed/{{sample}}/{{sample}}_1_trimmed.fq.gz"),
-        temp(f"{OUTPUT_DIR}/1.trimmed/{{sample}}/{{sample}}_2_trimmed.fq.gz")
+        trimmed_fastq_1 = f"{OUTPUT_DIR}/1.trimmed/{{sample}}/{{sample}}_1_trimmed.fq.gz",
+        trimmed_fastq_2 = f"{OUTPUT_DIR}/1.trimmed/{{sample}}/{{sample}}_2_trimmed.fq.gz"
     benchmark:
         "1.benchmarks/1.trimmed/{sample}.benchmark.txt"
     log:

@@ -6,7 +6,6 @@ include: "rules/common.smk"
 
 rule all:
     input:
-        expand(f"{OUTPUT_DIR}/3.bismark_deduplicate/{{sample}}/{{sample}}_1_trimmed_bismark_bt2_pe.deduplicated.bam", sample=SAMPLES),
         expand(f"{OUTPUT_DIR}/4.bismark_methylation/{{sample}}", sample=SAMPLES)
 
 

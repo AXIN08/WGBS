@@ -4,7 +4,7 @@ import os
 import argparse
 import sys
 
-configfile: "/home/liuxin/data_pasteur/12_epigenome/workflow/config/config.yaml"
+configfile: "/home/liuxin/data_pasteur/12_epigenome/WGBS/workflow/config/config.yaml"
 
 def parse_samples(samples_tsv):
     return pd.read_csv(samples_tsv, sep='\t').set_index("id", drop=False)

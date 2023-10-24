@@ -11,5 +11,5 @@ rule bismark_extract:
     threads: config["threads"]["bis_call"]
     priority: 100
     shell:
-        'bismark_methylation_extractor --cytosine_report -p --no_overlap --gzip --multicore {threads} --output {output.extr_dr} --genome_folder {REFERENCE_DIR} {input.bam_dedup_file} 2> {log}'
+        'bismark_methylation_extractor --cytosine_report -p --no_overlap --gzip --multicore {threads} --output {output.extr_dr} --genome_folder {REFERENCE_DIR} {input.bam_dedup_file} 2> {log} && cp {input.bam_dedup_file} /mnt/magic_nas/liuxin/WGBS_bamdata'
 
